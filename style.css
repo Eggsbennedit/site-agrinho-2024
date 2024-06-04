@@ -78,6 +78,7 @@ h2{
 .div_texto p{
     font-size: var(--txt_principal_size);
 }
+
 .imagem_conteudo{
     padding: 10%;
     width: 80%;
