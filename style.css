@@ -1,10 +1,84 @@
-.conteudo{
+:root{
+    --header_titulo-size: 2.5em;
+    --titulo_principal-size: 2.25em;
+    --txt_principal_size: 1.75em;
+    --verde_escuro: #667e41;
+    --verde_claro: #b8ec6a;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    height: 66vh;
+    background-image: url(floresta.png);
+    background-color: #667e41;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titulo__principal{
+    font-size: var(--header_titulo-size);
+    color: white;
+}
+
+.links{
+    display: flex;
+    gap: 2em;
+    position: absolute;
+    bottom: 12px;
+}
+
+.link{
+    font-size: var(--txt_principal_size);
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+.link:hover{
+    text-decoration: underline;
+    color: var(--verde_claro);
+}
+
+.conteudo.subtitulo{
+    height: 34vh;
+    margin: 0 10%;
+    text-align: justify;
+}
+
+.conteudo.divisao{
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.titulo_principal{
-
-}
 h2{
-    font-size: 2em;
+    font-size: var(--titulo_principal-size);
+}
+
+.conteudo p{
+    font-size: var(--txt_principal_size);
+}
+
+.div_texto{
+    padding: 5% 10%;
+    text-align: justify;
+}
+.div_texto h2{
+    text-align: center;
+}
+.div_texto p{
+    font-size: var(--txt_principal_size);
+}
+.imagem_conteudo{
+    padding: 10%;
+    width: 80%;
 }
