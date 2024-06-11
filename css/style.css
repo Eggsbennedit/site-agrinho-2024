@@ -1,0 +1,32 @@
+@import url(desktop.css);
+@import url(celular.css);
+
+:root{
+    --header_titulo-size: 2.5em;
+    --titulo_principal-size: 2.25em;
+    --txt_principal_size: 1.75em;
+
+    --verde_footer: #050a06;
+    
+    /*  ESPECIFICOS PARA DIA */
+    --verde_fundo_d: #b0ddb6;
+    --borda_cor_d: black;
+    --letra_cor_d: black;
+
+    /* ESPECIFICOS PARA NOITE */
+    --verde_fundo_n: #090f0a;
+    --borda_cor_n: rgb(54, 102, 0);
+    --letra_cor_n: #ffffff;
+}
+
+body{
+    background-color: var(--verde_fundo_d);
+    color: var(--letra_cor_d);
+    margin: 0;
+    transition: background-color 0.4s;
+    overflow-x: hidden;
+}
+body.noite{
+    background-color: var(--verde_fundo_n);
+    color: var(--letra_cor_n);
+}

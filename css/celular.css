@@ -1,0 +1,153 @@
+/* É APLICADO APENAS EM DESKTOPS OU LAPTOPS */
+
+@media screen and (max-width: 767px){
+    header{
+        height: 45vh;
+        background-image: url(../img/floresta.png);
+        background-color: #667e41;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #titulo__principal{
+        font-size: calc(var(--header_titulo-size)*0.85);
+        color: white;
+        text-align: center;
+    }
+    
+    
+    /* CRIA O 'INTERRUPTOR' PARA MODO NOTURNO */
+    .switch_div{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .toggle__switch{
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    .toggle__switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0993bd;
+        transition: 0.4s;
+        border-radius: 34px;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: yellow;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+    
+    input:checked + .slider {
+        background-color: #0a013a;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(26px);
+        background-color: gray;
+    }
+    
+    
+    /* ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO DO HEADER */
+    .links{
+        display: flex;
+        gap: 2em;
+        position: absolute;
+        bottom: 12px;
+    }
+    .link{
+        font-size: var(--txt_principal_size);
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        transition: color 0.5s;
+    }
+    .link:hover{
+        text-decoration: underline;
+        color: #b8ec6a;
+    }
+    
+
+    /* ESTILIZAÇÃO DO CONTEÚDO PRINCIPAL DO SITE */
+    .texto__subtitulo{
+        margin-top: 1em;
+    }
+
+    h2{
+        font-size: var(--titulo_principal-size);
+    }
+    
+    .conteudo.subtitulo{
+        height: fit-content;
+        margin: 0 10%;
+        text-align: justify;
+    }
+
+    .conteudo.divisao{
+        height: fit-content;
+        display: block;
+    }
+    .conteudo p{
+        font-size: var(--txt_principal_size);
+    }
+
+    .div_texto{
+        padding: 2.5% 10%;
+        text-align: justify;
+    }
+    .div_texto h2{
+        text-align: center;
+    }
+    .div_texto p{
+        font-size: var(--txt_principal_size);
+    }
+    
+    .imagem_conteudo{
+        margin: 2.5% 10%;
+        width: 80%;
+        border: var(--borda_cor_d) solid 2px;
+        border-radius: 20%;
+    }
+    
+    footer{
+        background-color: var(--verde_footer);
+        height: 10vh;
+        width: 100vw;
+        margin-top: 5vh;
+        border-top: black 2px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        margin: 0;
+    }
+    
+    footer p{
+        color: var(--letra_cor_n);
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,158 @@
+/* É APLICADO APENAS EM DESKTOPS OU LAPTOPS */
+
+@media screen and (min-width: 1025px){
+    header{
+        height: 66vh;
+        background-image: url(../img/floresta.png);
+        background-color: #667e41;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #titulo__principal{
+        font-size: var(--header_titulo-size);
+        color: white;
+        text-align: center;
+    }
+    
+    
+    /* CRIA O 'INTERRUPTOR' PARA MODO NOTURNO */
+    .switch_div{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .toggle__switch{
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    .toggle__switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0993bd;
+        transition: 0.4s;
+        border-radius: 34px;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: yellow;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+    
+    input:checked + .slider {
+        background-color: #0a013a;
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(26px);
+        background-color: gray;
+    }
+    
+    
+    /* ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO DO HEADER */
+    .links{
+        display: flex;
+        gap: 2em;
+        position: absolute;
+        bottom: 12px;
+    }
+    .link{
+        font-size: var(--txt_principal_size);
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        transition: color 0.5s;
+    }
+    .link:hover{
+        text-decoration: underline;
+        color: #b8ec6a;
+    }
+    
+    .texto__subtitulo{
+        margin-top: 1em;
+    }
+    
+    .conteudo.subtitulo{
+        height: 34vh;
+        margin: 0 10%;
+        text-align: justify;
+    }
+    
+    .conteudo.divisao{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    h2{
+        font-size: var(--titulo_principal-size);
+    }
+    
+    .conteudo p{
+        font-size: var(--txt_principal_size);
+    }
+    
+    .div_texto{
+        padding: 5% 10%;
+        text-align: justify;
+    }
+    .div_texto h2{
+        text-align: center;
+    }
+    .div_texto p{
+        font-size: var(--txt_principal_size);
+    }
+    
+    .imagem_conteudo{
+        margin: 15%;
+        width: 70%;
+        border: var(--borda_cor_d) solid 2px;
+        border-radius: 20%;
+        transition: margin 0.5s ease-in-out, width 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    }
+    .imagem_conteudo:hover{
+        margin: 12.5%;
+        width: 75%;
+        border-radius: 10%;
+    }
+    
+    footer{
+        background-color: var(--verde_footer);
+        height: 10vh;
+        width: 100vw;
+        border-top: black 2px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer, p{
+        margin: 0;
+    }
+    
+    footer p{
+        color: var(--letra_cor_n);
+        font-size: 1em;
+    }
+}
