@@ -31,6 +31,6 @@ body.noite{
     color: var(--letra_cor_n);
 }
 
-footer.noite{
-    border-top: white;
+footer{
+    border-top: white 2px solid;
 }
