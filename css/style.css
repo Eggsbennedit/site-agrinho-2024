@@ -20,6 +20,7 @@
 }
 
 body{
+    width: 100vw;
     background-color: var(--verde_fundo_d);
     color: var(--letra_cor_d);
     margin: 0;
