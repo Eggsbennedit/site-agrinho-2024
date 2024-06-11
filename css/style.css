@@ -9,7 +9,7 @@
     --verde_footer: #050a06;
     
     /*  ESPECIFICOS PARA DIA */
-    --verde_fundo_d: #b0ddb6;
+    --verde_fundo_d: #dbdddb;
     --borda_cor_d: black;
     --letra_cor_d: black;
 
@@ -29,4 +29,8 @@ body{
 body.noite{
     background-color: var(--verde_fundo_n);
     color: var(--letra_cor_n);
+}
+
+footer.noite{
+    border-top: white;
 }

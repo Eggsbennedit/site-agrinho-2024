@@ -1,6 +1,6 @@
 /* É APLICADO APENAS EM DESKTOPS OU LAPTOPS */
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 768px){
     header{
         height: 66vh;
         background-image: url(../img/floresta.png);
