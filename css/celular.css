@@ -1,6 +1,6 @@
-/* É APLICADO APENAS EM DESKTOPS OU LAPTOPS */
+/* É APLICADO EM CELULARES E TABLETS */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1024px){
     header{
         height: 45vh;
         background-image: url(../img/floresta.png);
