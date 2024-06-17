@@ -26,6 +26,14 @@ body{
     transition: background-color 0.4s;
     overflow-x: hidden;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--verde_fundo_n);
+        color: #ffffff;
+    }
+}
+
 body.noite{
     background-color: var(--verde_fundo_n);
     color: var(--letra_cor_n);
