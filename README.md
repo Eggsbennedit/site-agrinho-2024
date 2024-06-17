@@ -6,8 +6,8 @@ Um site voltado a fomentar a discussão sobre algo que pode mudar o país, do ca
 
 Há três formas de utilizar este site, sendo elas: via Vercel, via Github Pages ou baixando os arquivos do site.
 O acesso das duas primeiras formas se encontra na seção "Sobre" (ou em inglês, About) ou podem ser acessados clicando nos links abaixo:
-- ![GitHub Pages](https://eggsbennedit.github.io/site-agrinho-2024/)
-- ![Vercel](https://site-agrinho-2024.vercel.app/)
+- [GitHub Pages](https://eggsbennedit.github.io/site-agrinho-2024/)
+- [Vercel](https://site-agrinho-2024.vercel.app/)
 
 ## como usá-lo
 
